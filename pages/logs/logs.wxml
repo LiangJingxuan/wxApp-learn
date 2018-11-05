@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <!-- <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block> -->
+  <view>欢迎： {{username}}</view>
+  <map longitude="116.337403" latitude="39.770844"></map>
+</view>

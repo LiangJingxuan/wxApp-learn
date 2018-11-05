@@ -1,0 +1,21 @@
+<!--pages/user/user.wxml-->
+<view>
+  <text>{{tip}}</text>
+</view>
+
+<view wx:for="{{item}}" wx:key="id">
+  {{item.id}},{{item.name}},{{item.age}}
+</view>
+
+<view wx:if="{{login}}">欢迎光临</view>
+<view wx:else="{{!login}}">请登录</view>
+
+<template name="nameFor">
+  <view wx:for="{{item}}" wx:key="id">
+    {{item.id}},{{item.name}},{{item.age}}
+  </view>
+</template>
+
+<template is="nameFor" data="{{item}}" />
+
+<view bindtap="tapName">点击事件</view>

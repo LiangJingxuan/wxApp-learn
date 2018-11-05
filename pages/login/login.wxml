@@ -1,0 +1,3 @@
+<label>用户名： <input type='text' class='inputs' bindinput='usernameInput' /></label>
+<label>密码： <input type='password' class='inputs' bindinput='passwordInput' /></label>
+<button bindtap='signIn'>登录</button>
