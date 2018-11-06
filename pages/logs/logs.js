@@ -20,7 +20,7 @@ Page({
         url: '../login/login'
       });
     } else {
-
+      this.setData({ username: app.globalData.login.username});
     }
   }
 })

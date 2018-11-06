@@ -1,3 +1,5 @@
+const app=getApp();
+
 Page({
 
   /**
@@ -18,14 +20,17 @@ Page({
 
   // 登录功能
   usernameInput(e){
-    this.setDate({ loginname: e.detail.value });
+   this.setData({ loginname: e.detail.value });
 
   },
   passwordInput(e){
-    this.setDate({ loginpwd: e.detail.value });
+    this.setData({ loginpwd: e.detail.value });
     
   },
   signIn(){
-    
+    app.globalData.login = { username: this.data.loginname, password: this.data.loginpwd}
+    wx.switchTab({
+      url: '../logs/logs',
+    })
   }
 })
