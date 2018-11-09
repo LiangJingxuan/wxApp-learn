@@ -1,0 +1,60 @@
+<view class="container">
+  
+  <!-- 轮播广告 -->
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 精品推荐 -->
+  <view class='selection'>
+    <!-- 标题 -->
+    <view class='header'>
+      <text>精品推荐</text>
+      <text class='header-all'>全部精品</text>
+    </view>
+    <!-- 列表项 -->
+    <view class='content'>
+      <view class='content-item'>
+        <image src='http://img.hb.aicdn.com/230ccdfb35272df1f3f06ffd1743d5e8c70c3ddfa022f-Sxsat8_fw658'></image>
+        <view class='content-item-text'>
+          <text>标题标题标题标题</text>
+        </view>
+      </view>
+      <view class='content-item'>
+        <image src='http://img.hb.aicdn.com/787b66ec12a9d63a50c9244c1c704cb90cb05ec6269b5-hWd7Zu_fw658'></image>
+        <view class='content-item-text'>
+          <text>标题标题标题标题</text>
+        </view>
+      </view>
+      <view class='content-item'>
+        <image src='http://img.hb.aicdn.com/9ccb4e1dd52926c79b205e0570845048c20ebfa226647-abwwYe_fw658'></image>
+        <view class='content-item-text'>
+          <text>标题标题标题标题</text>
+        </view>
+      </view>
+      <view class='content-item'>
+        <image src='http://img.hb.aicdn.com/8d31c9c8a231374654a0fe68efdf526605a8edf81b6e3-jxofpl_fw658'></image>
+        <view class='content-item-text'>
+          <text>标题标题标题标题</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 热门评测 -->
+  <view class='selection'>
+    <!-- 标题 -->
+    <view class='header'>
+      <text>热门评测</text>
+      <text class='header-all'>全部评测</text>
+    </view>
+    <!-- 列表项 -->
+    
+  </view>
+
+</view>
